@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Portal Teknik Sipil – Universitas Wijayakusuma Purwokerto</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo-area">
+    <img src="logo.png" class="logo-unwiku">
+    <div class="logo-text">
+      <span class="univ">Universitas Wijayakusuma Purwokerto</span>
+      <span class="fakultas">Fakultas Teknik – Teknik Sipil</span>
+    </div>
+  </div>
+
+  <nav>
+  <a href="index.html" class="active">Beranda</a>
+  <a href="informasi.html">Informasi</a>
+  <a href="artikel.html">Artikel</a>
+  <a href="kontak.html">Kontak</a>
+</nav>
+</header>
+
+<!-- HERO + POPULER -->
+<section class="hero-wrapper">
+
+  <div class="slider">
+    <div class="slide active" style="background-image:url('konstruksi.jpg')"></div>
+    <div class="slide" style="background-image:url('jembatan.jpg')"></div>
+    <div class="slide" style="background-image:url('jalan.jpg')"></div>
+
+    <div class="hero-text">
+      <h1>Portal Informasi & Edukasi Teknik Sipil</h1>
+      <p>Fakultas Teknik – Universitas Wijayakusuma Purwokerto</p>
+    </div>
+  </div>
+
+  <div class="populer">
+    <h3>Artikel Populer</h3>
+
+    <div class="populer-item">
+      <img src="jembatan.jpg">
+      <div>
+        <b>Analisis Jembatan</b>
+        <p>Kajian kekuatan struktur beton.</p>
+      </div>
+    </div>
+
+    <div class="populer-item">
+      <img src="beton.jpg">
+      <div>
+        <b>Mutu Beton</b>
+        <p>Pengaruh material terhadap bangunan.</p>
+      </div>
+    </div>
+
+    <div class="populer-item">
+      <img src="jalan.jpg">
+      <div>
+        <b>Perkerasan Jalan</b>
+        <p>Desain lapisan jalan modern.</p>
+      </div>
+    </div>
+
+    <div class="populer-item">
+      <img src="konstruksi.jpg">
+      <div>
+        <b>Manajemen Proyek</b>
+        <p>Pengelolaan proyek konstruksi.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- BIDANG -->
+<section class="bidang">
+  <h2>Bidang Teknik Sipil</h2>
+  <div class="bidang-box">
+    <div>Struktur Bangunan</div>
+    <div>Transportasi</div>
+    <div>Hidrologi</div>
+    <div>Geoteknik</div>
+    <div>Manajemen Konstruksi</div>
+    <div>Bangunan Air</div>
+  </div>
+</section>
+
+<!-- BERITA -->
+<section class="berita">
+  <h2>Berita & Edukasi</h2>
+  <div class="grid">
+    <div class="box"><img src="jembatan.jpg"><p>Studi Struktur Jembatan</p></div>
+    <div class="box"><img src="beton.jpg"><p>Uji Kuat Beton</p></div>
+    <div class="box"><img src="jalan.jpg"><p>Perkerasan Jalan</p></div>
+    <div class="box"><img src="konstruksi.jpg"><p>Manajemen Proyek</p></div>
+  </div>
+</section>
+
+<!-- LAB -->
+<section class="lab">
+  <h2>Laboratorium Teknik Sipil</h2>
+
+  <div class="lab-grid">
+    <div class="lab-card">
+      <img src="lab-beton.jpg">
+      <h4>Laboratorium Beton</h4>
+      <p>Uji kuat tekan dan mutu beton.</p>
+    </div>
+
+    <div class="lab-card">
+      <img src="lab-material.jpg">
+      <h4>Laboratorium Material</h4>
+      <p>Pengujian bahan bangunan.</p>
+    </div>
+
+    <div class="lab-card">
+      <img src="lab-soil.jpg">
+      <h4>Mekanika Tanah</h4>
+      <p>Uji daya dukung tanah.</p>
+    </div>
+
+    <div class="lab-card">
+      <img src="lab-hidrolik.jpg">
+      <h4>Laboratorium Hidrologi</h4>
+      <p>Simulasi aliran air dan drainase.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+© 2024 Teknik Sipil – Universitas Wijayakusuma Purwokerto
+</footer>
+
+<script>
+let i = 0;
+setInterval(() => {
+  const slides = document.querySelectorAll('.slide');
+  slides.forEach(s => s.classList.remove('active'));
+  i = (i + 1) % slides.length;
+  slides[i].classList.add('active');
+}, 4000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Segoe UI",sans-serif;
+}
+
+body{
+  background:#f4f6fb;
+}
+
+/* NAVBAR */
+.navbar{
+  background:#0f2a44;
+  padding:18px 60px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo-area{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  color:white;
+}
+
+.logo-unwiku{
+  width:50px;
+}
+
+.logo-text .univ{
+  font-size:16px;
+  font-weight:bold;
+}
+
+.logo-text .fakultas{
+  font-size:12px;
+  opacity:.8;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 16px;
+}
+
+nav a.active{
+  border-bottom:3px solid #00c2ff;
+}
+
+/* HERO */
+.info-hero{
+  height:420px;
+  background:url('konstruksi.jpg') center/cover;
+  position:relative;
+}
+
+.info-overlay{
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:60px;
+  background:linear-gradient(transparent,rgba(0,0,0,.85));
+  color:white;
+}
+
+.info-overlay span{
+  background:#00c2ff;
+  padding:6px 14px;
+  border-radius:20px;
+  font-size:13px;
+}
+
+.info-overlay h1{
+  margin:15px 0 10px;
+  font-size:34px;
+  line-height:1.3;
+}
+
+/* CONTENT */
+.info-container{
+  display:grid;
+  grid-template-columns:3fr 1.2fr;
+  gap:40px;
+  padding:60px;
+}
+
+.info-content p{
+  font-size:16px;
+  line-height:1.9;
+  margin-bottom:20px;
+  color:#333;
+}
+
+/* SIDEBAR */
+.info-sidebar h3{
+  margin-bottom:20px;
+  color:#0f2a44;
+}
+
+.side-item{
+  display:flex;
+  gap:12px;
+  margin-bottom:20px;
+  text-decoration:none;
+  color:#222;
+}
+
+.side-item img{
+  width:80px;
+  height:60px;
+  object-fit:cover;
+  border-radius:8px;
+}
+
+.side-item b{
+  display:block;
+  margin-bottom:4px;
+  color:#0f2a44;
+}
+
+/* FOOTER */
+.footer{
+  background:#0f2a44;
+  color:white;
+  text-align:center;
+  padding:25px;
+}
