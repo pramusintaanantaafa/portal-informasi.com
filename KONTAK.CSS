@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f3f6fb;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #0f2a44;
+  padding: 18px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo-unwiku {
+  width: 50px;
+}
+
+.logo-text .univ {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.logo-text .fakultas {
+  color: #cfd8e3;
+  font-size: 12px;
+}
+
+nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+nav a.active {
+  border-bottom: 3px solid #4f7cff;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #2f6fed, #1f3c88);
+  padding: 90px 20px 120px;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* FORM */
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -80px;
+  padding-bottom: 80px;
+}
+
+.form-card {
+  background: white;
+  width: 800px;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.form-card h2 {
+  color: #0f2a44;
+  margin-bottom: 5px;
+}
+
+.form-card .desc {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.field {
+  margin-bottom: 18px;
+}
+
+.field label {
+  font-size: 14px;
+  color: #333;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+}
+
+.upload {
+  margin-bottom: 20px;
+}
+
+button {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #2f6fed, #1f3c88);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* FOOTER */
+footer {
+  background: #0f2a44;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
